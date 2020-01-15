@@ -1,8 +1,4 @@
 # -*- coding: utf-8 -*-
-#
-# Elliptic curve point operations. Point addition and subtraction.
-# Copyright (c) 2015-2020 Denis Leonov <466611@gmail.com>
-#
 
 def OnCurve(x,y): # Check if the point is on the curve
     A = (y*y)%P
