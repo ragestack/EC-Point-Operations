@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #
-# Elliptic curve point operations. Point subtraction.
+# Elliptic curve point operations. Point addition and subtraction.
 # Copyright (c) 2015-2020 Denis Leonov <466611@gmail.com>
 #
 
