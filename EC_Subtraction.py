@@ -1,4 +1,8 @@
 # -*- coding: utf-8 -*-
+#
+# Elliptic curve point operations
+# Copyright (c) 2015 Denis Leonov <466611@gmail.com>
+#
 
 def OnCurve(x,y): # Check if the point is on the curve
     A = (y*y)%P
@@ -18,7 +22,7 @@ def legendre_symbol(a,p):
     ls = pow(a, (p - 1) / 2, p)
     return -1 if ls == p - 1 else ls
 
-def modsqrt(a,p):
+def modsqrt(a,p): # Square root A modulo P
     if legendre_symbol(a, p) != 1:
         return 0
     elif a == 0:
