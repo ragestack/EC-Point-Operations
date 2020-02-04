@@ -12,12 +12,6 @@ def OnCurve(x,y): # Check if the point is on the curve
         C = True
     return C
 
-def ECadd(xp,yp,xq,yq): # EC point addition
-    m = ((yq-yp) * modinv(xq-xp,P))%P
-    xr = (m*m-xp-xq)%P
-    yr = (m*(xp-xr)-yp)%P
-    return (xr,yr)
-
 def legendre_symbol(a,p):
     ls = pow(a, (p - 1) / 2, p)
     return -1 if ls == p - 1 else ls
