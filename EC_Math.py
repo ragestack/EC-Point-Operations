@@ -52,7 +52,7 @@ def modsqrt(a,p): # Square root A modulo P
         b = (b * g) % p
         r = m
 
-def modinv(a,n): # Extended Euclidean Algorithm in elliptic curves
+def modinv(a,n): # Extended Euclidean Algorithm in elliptic curves 
     lm, hm = 1,0
     low, high = a%n,n
     while low > 1:
@@ -65,6 +65,7 @@ def modinv(a,n): # Extended Euclidean Algorithm in elliptic curves
         low = new
     return lm % n
 
+# ECadd taken from https://github.com/wobine/blackboard101/blob/master/EllipticCurvesPart4-PrivateKeyToPublicKey.py
 def ECadd(xp,yp,xq,yq): # EC point addition
     m = ((yq-yp) * modinv(xq-xp,P))%P
     xr = (m*m-xp-xq)%P
