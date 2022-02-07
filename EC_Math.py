@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 #
 # Elliptic curve point operations (Python 2.7)
-# Copyright (c) 2015 Denis Leonov <466611@gmail.com>
+# Copyright (c) Denis Leonov <466611@gmail.com>
 #
 
 def OnCurve(x,y): # Check if the point is on the curve
